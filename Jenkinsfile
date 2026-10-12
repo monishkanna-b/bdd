@@ -10,8 +10,10 @@ pipeline {
         }
 
     }
+
 post {
     always {
+
         publishHTML(target: [
             allowMissing: false,
             alwaysLinkToLastBuild: true,
@@ -20,6 +22,9 @@ post {
             reportFiles: 'ExtentReport.html',
             reportName: 'Extent Report'
         ])
+
+        archiveArtifacts artifacts: 'Reports/ExtentReport.html'
+
     }
 }
 }
