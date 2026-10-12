@@ -23,8 +23,7 @@ post {
             reportName: 'Extent Report'
         ])
 
-        archiveArtifacts artifacts: 'Reports/ExtentReport.html'
-
+        archiveArtifacts artifacts: 'Reports/**'
     }
 }
 }
