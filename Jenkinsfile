@@ -8,16 +8,18 @@ pipeline {
                 bat 'mvn clean test'
             }
         }
+
     }
+post {
+    always {
 
-    post {
+        publishHTML([
+            reportDir: 'Reports',
+            reportFiles: 'ExtentReport.html',
+            reportName: 'Extent Report'
+        ])
 
-        success {
-            echo 'Automation PASSED'
-        }
-
-        failure {
-            echo 'Automation FAILED'
-        }
+        archiveArtifacts artifacts: 'Reports/ExtentReport.html'
     }
+}
 }
