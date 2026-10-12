@@ -1,12 +1,12 @@
 package stepdefinitions;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+// import org.openqa.selenium.OutputType;
+// import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 
-import com.aventstack.extentreports.MediaEntityBuilder;
+// import com.aventstack.extentreports.MediaEntityBuilder;
 
 import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
+// import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

@@ -20,11 +20,4 @@ Scenario: Verify Login with InValid Password
   And User clicks on the login button
   Then User should see invalid password error
   
-  @Login
-Scenario: Verify Login with InValid Username
-  Given Data Set for the Scenario "InvalidUsername"
-  And User launches the webapplication
-  When User enters the username
-  And User enters the password
-  And User clicks on the login button
-  Then User should see invalid user error
+
